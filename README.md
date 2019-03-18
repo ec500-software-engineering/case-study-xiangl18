@@ -39,7 +39,9 @@ Also you should write your own test for your new features, and check the code co
 b.	What parts of the software are asynchronous (if any)?  
 When using the flutter, you can use library in dart to program asynchronously in case there is a program block. For example, we can use the future object or use await and async to implement asynchrony.  
 c.	Please make diagrams as appropriate for your explanation  
-<div align="center"><img src="./docs/diagram.png" width="70%"/></div>
+
+<div align="center"><img src="./docs/diagram.png" width="70%"/></div>  
+
 d.	How are separation of concerns and information hiding handled?  
 e.	What architectural patterns are used    
 For flutter, there are mainly two architectural patterns: BloC and MVP.  

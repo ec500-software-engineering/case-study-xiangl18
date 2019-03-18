@@ -43,9 +43,8 @@ c.	Please make diagrams as appropriate for your explanation
 <div align="center"><img src="./docs/diagram.png" width="70%"/></div>  
 
 d.	How are separation of concerns and information hiding handled?  
-e.	What architectural patterns are used    
+e.	What architectural patterns are used?    
 For flutter, there are mainly two architectural patterns: BloC and MVP.  
-
 For the BloC:  
 <div align="center"><img src="./docs/BloC.png"/></div>  
 The idea behind it is to have separated components (BloC components) containing only the business logic that is meant to be easily shared between different Dart apps.  
@@ -57,7 +56,7 @@ For the MVP:
 * The view is a passive interface that displays data (the model) and routes user commands (events) to the presenter to act upon that data.
 * The presenter acts upon the model and the view. It retrieves data from repositories (the model), and formats it for display in the view.  
 
-f.	Does the project lean more towards object oriented or functional components  
+f.	Does the project lean more towards object oriented or functional components?  
 The project is object oriented.  
 # Analyze two defects in the project--e.g. open GitHub issue, support request tickets or feature request for the project
 a. Does the issue require an architecture change, or is it just adding a new function or?  

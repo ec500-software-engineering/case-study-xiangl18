@@ -2,7 +2,7 @@
 case-study-xiangl18 created by GitHub Classroom  
 # Case Study: flutter
 # Technology and Platform used for development 
-a.	What coding languages are used? Do you think the same languages would be used if the project was started today? What languages would you use for the project if starting it today?
+a.	What coding languages are used? Do you think the same languages would be used if the project was started today? What languages would you use for the project if starting it today?  
 The code language used in flutter is dart, I think the same language would be used if the project is started today, for it is a language for Declarative Programming, and it is strongly typed comparing to JavaScript, and the price for making new object is very low, also it can be compiled with AOT JIT, so it is faster when running. And also it is simpler than Java.  
 
 b.	What build system is used (e.g. Bazel, CMake, Meson)? What build tools / environment are needed to build (e.g. does it require Visual Studio or just GCC or ?)    

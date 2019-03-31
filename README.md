@@ -61,6 +61,16 @@ The project is object oriented.
 # Analyze two defects in the project--e.g. open GitHub issue, support request tickets or feature request for the project
 a. Does the issue require an architecture change, or is it just adding a new function or?  
 b. make a patch / pull request for the project to fix problem / add feature  
+1. Google supports Flutter and there are many helpful libraries. However, the framework is relatively new. You won’t find every functionality you’re looking for. With Flutter, developers would have to build these libraries themselves, which is time-consuming.
+e.g. [issue #30270](https://github.com/flutter/flutter/issues/30270)  
+
+2.Complex lifecycle management compared to Android Studio;
+e.g. [issue #20325](https://github.com/flutter/flutter/issues/20325)  
+  
+# demo  
+<div align="center"><img src="./docs/demo.png" width="50%"/></div>
+
+
 # Reference  
 Wikipedia:  
 [Model–view–presenter](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93presenter)  

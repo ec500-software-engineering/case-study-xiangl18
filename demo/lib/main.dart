@@ -1,19 +1,27 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:demo/game_page.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
 void main() => runApp(new MyApp());
-
+final _usernameController = TextEditingController();
+final _passwordController = TextEditingController();
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
-      theme: new ThemeData(primarySwatch: Colors.blue),
+      debugShowCheckedModeBanner: false,
+      routes: <String, WidgetBuilder> {
+        '/game': (BuildContext context) => new GamePage()
+      },
+      theme: new ThemeData(primarySwatch: Colors.deepPurple),
       home: new LoginPage(),
     );
   }
 }
 
 class LoginPage extends StatefulWidget {
+
   @override
   State createState() => new LoginPageState();
 }
@@ -40,6 +48,7 @@ class LoginPageState extends State<LoginPage>
   Widget build(BuildContext context) {
     
     return new Scaffold(
+
       backgroundColor: Colors.deepPurple,
       body: new Stack(fit: StackFit.expand, children: <Widget>[
 
@@ -65,12 +74,12 @@ class LoginPageState extends State<LoginPage>
                   child: new Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: <Widget>[
-                      new TextFormField(
+                      new TextFormField(controller: _usernameController,
                         decoration: new InputDecoration(
                             labelText: "Email", fillColor: Colors.black),
                         keyboardType: TextInputType.emailAddress,
                       ),
-                      new TextFormField(
+                      new TextFormField(controller: _passwordController,
                         decoration: new InputDecoration(
                           labelText: "Password",
                         ),
@@ -87,7 +96,12 @@ class LoginPageState extends State<LoginPage>
                         splashColor: Colors.teal,
                         textColor: Colors.white,
                         child: new Icon(FontAwesomeIcons.signInAlt),
-                        onPressed: () {},
+                        onPressed: () {
+                          if(_performLogin()){
+
+                            Navigator.of(context).pushNamed('/game');
+                          }
+                        },
                       )
                     ],
                   ),
@@ -99,4 +113,36 @@ class LoginPageState extends State<LoginPage>
       ]),
     );
   }
+   _performLogin() {
+    String username = _usernameController.text;
+    String password = _passwordController.text;
+    if(username == 'xiangl18@bu.edu' && password == '1234') {
+      Fluttertoast.showToast(
+          msg: "login attempt: $username",
+          toastLength: Toast.LENGTH_SHORT,
+//          gravity: ToastGravity.CENTER,
+          timeInSecForIos: 1,
+          backgroundColor: Colors.grey,
+          textColor: Colors.white,
+          fontSize: 16.0
+      );
+      print('login attempt: $username');
+      return true;
+    }
+      else{
+      Fluttertoast.showToast(
+          msg: "password not match",
+          toastLength: Toast.LENGTH_SHORT,
+//          gravity: ToastGravity.CENTER,
+          timeInSecForIos: 1,
+          backgroundColor: Colors.grey,
+          textColor: Colors.white,
+          fontSize: 16.0
+      );
+      print('password not match');
+      return false;
+     }
+
+  }
 }
+

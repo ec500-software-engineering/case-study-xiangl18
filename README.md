@@ -68,7 +68,11 @@ e.g. [issue #30270](https://github.com/flutter/flutter/issues/30270)
 e.g. [issue #20325](https://github.com/flutter/flutter/issues/20325)  
   
 # demo  
-<div align="center"><img src="./docs/demo.png" width="50%"/></div>
+<figure class="half">
+    <img src="./docs/demo.png" width="50%">
+    <img src="./docs/demo2.png" width="50%">
+</figure>
+
 
 
 # Reference  

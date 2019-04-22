@@ -64,7 +64,7 @@ b. make a patch / pull request for the project to fix problem / add feature
 1. Google supports Flutter and there are many helpful libraries. However, the framework is relatively new. You won’t find every functionality you’re looking for. With Flutter, developers would have to build these libraries themselves, which is time-consuming.
 e.g. [issue #30270](https://github.com/flutter/flutter/issues/30270)  
 
-2.Complex lifecycle management compared to Android Studio;
+2. Complex lifecycle management compared to Android Studio;
 e.g. [issue #20325](https://github.com/flutter/flutter/issues/20325)  
   
 # demo  
